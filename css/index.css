@@ -46,3 +46,68 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid 2px black;
+	background-color: darkblue;
+	
+}
+
+
+.navbut {
+	width: 50%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 3rem;
+	text-decoration: none;
+	margin-right: 12rem;
+	
+	
+	
+	
+}
+a {
+	
+	text-decoration: none;
+	background-color: lightgreen;
+	border: 1px solid white;
+	border-radius: 1rem;
+	
+}
+.header{
+	text-align: center;
+	font-size: 3rem;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 7rem;
+	
+
+
+}
+.me {
+	
+	max-width: 20rem;
+	max-height: 20rem;
+    border: 1.2rem solid black;
+}
+h1{
+	margin: 2rem;
+	padding-bottom: 5rem;
+	border-bottom: darkblue .2rem solid;
+	
+}
+.about {
+	text-align: center;
+	font-size: 1.9rem;
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+	
+}
