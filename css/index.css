@@ -2,112 +2,296 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-.navbar{
-	display: flex;
-	justify-content: space-between;
-	border-bottom: solid 2px black;
-	background-color: darkblue;
-	
+* {
+  box-sizing: border-box;
 }
-
-
-.navbut {
-	width: 50%;
-	display:flex;
-	justify-content: space-evenly;
-	align-items: center;
-	font-size: 3rem;
-	text-decoration: none;
-	margin-right: 12rem;
-	
-	
-	
-	
+html {
+  font-size: 62.5%;
 }
-a {
-	
-	text-decoration: none;
-	background-color: lightgreen;
-	border: 1px solid white;
-	border-radius: 1rem;
-	
+h1 {
+  font-size: 4rem;
 }
-.header{
-	text-align: center;
-	font-size: 3rem;
-	
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-top: 7rem;
-	
-
-
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
 }
-.me {
-	
-	max-width: 20rem;
-	max-height: 20rem;
-    border: 1.2rem solid black;
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
 }
-h1{
-	margin: 2rem;
-	padding-bottom: 5rem;
-	border-bottom: darkblue .2rem solid;
-	
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px black;
+  background-color: darkblue;
+}
+.navbar .navbut {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 4rem;
+  text-decoration: none;
+  margin-right: 12rem;
+}
+.navbar a {
+  text-decoration: none;
+  background-color: lightgreen;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+.header {
+  text-align: center;
+  font-size: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7rem;
+  border-bottom: darkblue 0.2rem solid;
+}
+.header .me {
+  max-width: 30rem;
+  max-height: 30rem;
+  border: 1.2rem solid black;
+}
+.header h1 {
+  margin: 2rem;
+  padding-bottom: 5rem;
 }
 .about {
-	text-align: center;
-	font-size: 1.9rem;
-	margin: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 3rem;
-	
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  border-bottom: darkblue 0.2rem solid;
+}
+.about h1 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  .about {
+    margin-left: 5rem;
+  }
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  border-bottom: darkblue 0.2rem solid;
+}
+.projects h3 {
+  font-size: 2.5rem;
+}
+.projects .card1 {
+  border: solid 2px black;
+  text-align: center;
+  margin-left: 30rem;
+  margin-right: 30rem;
+  margin-bottom: 5rem;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .projects .card1 {
+    border: none;
+    margin-left: 26rem;
+    margin-bottom: 1rem;
+  }
+}
+.projects .card2 {
+  border: solid 2px black;
+  text-align: center;
+  margin-left: 30rem;
+  margin-right: 30rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .projects .card2 {
+    border: none;
+    margin-left: 26rem;
+  }
+}
+.projects .card3 {
+  border: solid 2px black;
+  text-align: center;
+  margin-left: 30rem;
+  margin-right: 30rem;
+  background-color: lightblue;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .projects .card3 {
+    border: none;
+    margin-left: 26rem;
+  }
+}
+.projects .next {
+  max-width: 40rem;
+  max-height: 35rem;
+  border: 0.2rem solid black;
+}
+.projects a {
+  text-decoration: none;
+  background-color: lightgreen;
+  border: 1px solid white;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.contact {
+  font-size: 1.3rem;
+  text-align: right;
+}
+.contact .lastLink {
+  color: blue;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .contact {
+    text-align: center;
+  }
 }

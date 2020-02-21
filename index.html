@@ -4,29 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Neel Mazumdar</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="css/index.css" rel="stylesheet">
     <script src="./components/index.js" async></script>
 </head>
 
 <body>
     <div class = "container">
-        <nav class = "navbar">
+        <nav class = "navbar" id = "home">
             <div class = img1>
                 <img src = "img/logo.png"/>                          
             </div>
             <div class = navbut>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
 
         </nav>
         <div class = "header">
             <div class = "text">
                 <div>
-                    <h2>Hello, I'm Neel Mazumdar</h2>
+                    <h1>Hello, I'm Neel Mazumdar</h1>
                 </div>
                 <div>
                     <h1> An aspiring Web Developer from Shelton, CT</h1>
@@ -37,17 +38,50 @@
             </div>
             
         </div>
-        <div class = "about">
+        <div class = "about" id = "about">
             <div>
-                <p>
+                <h1>
                     I'm a Lambda School student currently learning Full Stack Web Development. My learning includes HTML, CSS and Javascript. As a lifelong gamer, I am hoping to put my newfound skills to work as a Game Developer. 
-                </p>
+                </h1>
             </div>
             <div>
                 <h1>
                     When I'm not laboring over code, I enjoy travelling, playing poker and drinking fine wine(sometimes at the same time).
                 </h1>
             </div>
+
+        </div>
+        <div class = "projects" id = "projects">
+            <div class = "card1">
+                
+                <h3>Newsfeed Components</h3>
+                <img class = "next" src = "img/news.png"/>
+                <p>This project was great practice in building a mock Newsfeed reader. By utilizing event click listeners, I created a series of news articles which toggled open to reveal dummy data, as well as a collapsible menu bar.</p>
+                <p>This project was made using vanilla Javascript</p>
+                <a href = "https://github.com/neel7777/Newsfeed-Components">Github</a>
+
+            </div>
+            <div class = "card2">
+                <h3>Saltiest Hackers</h3>
+                <img class = "next" src = "img/salt.jpg"/>
+                <p>For my first build week with Lambda School, I collaborated with several students of other cohorts/fields of study to create a website that tracks commenters' based on their level of 'saltiness' while commenting.</p>
+                <p>This project was made with vanilla HTML and CSS</p>
+                <a href = "https://github.com/neel7777/marketing">Github</a>
+
+            </div>
+            <div class = "card3">
+                <h3>NASA Photo</h3>
+                <img class = "next" src = "img/nasa.png"/>
+                <p>In this project, I imported data from the NASA site to display the official photo of the day.</p>
+                <p>This project was made with React</p>
+                <a href= "https://github.com/neel7777/nasa-photo-of-the-day">Github</a>
+
+            </div>
+
+        </div>
+        <div class = "contact" id = "contact">
+            <p>For Business Inquiries, contact me at: </p>
+            <a class = "lastLink" href ="mailto:neelmazumdar7@gmail.com">E-Mail</a>
 
         </div>
     </div>
